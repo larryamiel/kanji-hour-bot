@@ -25,7 +25,7 @@ setInterval( kanjiSearch, 1000 * 60 * 60 );
 
 function kanjiSearch() {
 
-    var kanjiFile = fs.readFileSync( '../kanji-scraper/assets/kanji.json', 'utf8')
+    var kanjiFile = fs.readFileSync( './assets/assets/kanji.json', 'utf8')
     var kanjiObject = JSON.parse( kanjiFile );
 
     console.log( kanjiObject.kanjiList[ kanjiObject.index ] );
@@ -49,7 +49,7 @@ function kanjiSearch() {
 
         var kanjiJSONString = JSON.stringify( kanjiObject );
         
-        fs.writeFile( '../kanji-scraper/assets/kanji.json', kanjiJSONString, (err) => {
+        fs.writeFile( './assets/assets/kanji.json', kanjiJSONString, (err) => {
         
             if( err ) { console.log( err ); }
             else { console.log( 'Kanji Saved' ) }
@@ -120,7 +120,7 @@ function kanjiScrape() {
     
         var kanjiJSONString = JSON.stringify( kanjiJSON );
     
-        fs.writeFile( '../kanji-scraper/assets/kanji.json', kanjiJSONString, (err) => {
+        fs.writeFile( './assets/assets/kanji.json', kanjiJSONString, (err) => {
     
             if( err ) { console.log( err ); }
             else { console.log( err ) }
