@@ -1,0 +1,22 @@
+{
+  "name": "kanji-scraper",
+  "version": "1.0.0",
+  "description": "Kanji Scraper",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Kanji"
+  ],
+  "author": "Larry Amiel",
+  "license": "ISC",
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "twit": "^2.2.10",
+    "unofficial-jisho-api": "^1.0.6"
+  }
+}
