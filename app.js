@@ -36,7 +36,9 @@ function kanjiSearch() {
                     'JLPT Level: ' + result.jlptLevel + '\n' +
                     'Meaning: ' + result.meaning + '\n' +
                     'Kunyomi: ' + JSON.stringify(result.kunyomi) + '\n' +
-                    'Onyomi: ' + JSON.stringify(result.onyomi);
+                    'Onyomi: ' + JSON.stringify(result.onyomi) + '\n' + '\n';
+
+        message += '#japanese #kanji #learningJapanese #jisho'
 
         sendTweet( message, JSON.stringify(result.strokeOrderDiagramUri) );
 
